@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html> 
+<head>
+	<script src="https://d3js.org/d3.v6.min.js"></script>
+	<title>Data Collection</title>
+	<meta charset="UTF-8" name="collection" content="width=device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" href="data_styles.css">
+</head>
+
+<body>
+<script type="text/javascript" src="data_script.js"></script>
+<div class="header">
+	<h1 id="title_text"></h1><hr>
+	<h2 id="subtitle">Bar Graph Representation</h2>
+	<p id="task" align="center">Your task is to <b>find the median value</b> from the given set of numbers represented as Bar Graphs.</p>
+</div>
+
+<div id="start_button">
+	<button type="button" onclick="barTest()">Begin Bar Graph Trials</button><br>
+</div>
+
+<div id="test_container">
+	
+</div>
+
+<div id="results">
+	<table id="fin_results">
+		<tr>
+			<th>Representation</th>
+			<th>Number of Values</th>
+			<th>Repetition</th>
+			<th>Values Shown</th>
+			<th>Correct Answer</th>
+			<th>Participant Answer</th>
+			<th>Time(ms)</th>
+		</tr>
+	</table>
+	<br>
+</div>
+
+<div id="questionnaire">
+	<button type="button" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSdgNzRAJ3vmbrnPaKGgFfrzCVDUF4GN3qW2nsOvhhICNDy8sQ/viewform?usp=sf_link'">Experiment Survey</button>
+	<p id="site" align="center"> This will help us with our analysis.<br>Thank you for participating in our experiment! </p>
+</div>
+
+<script type="text/javascript">
+	d3.select("#title_text").text("Text Representation vs. Graphical Representation")
+		.style('color', 'black')
+		.style('font-size', '40px')
+		
+	var q = document.getElementById("questionnaire");
+	q.style.display = 'none';
+	
+	var res_table = document.getElementById("fin_results");
+	res_table.style.display = 'none';
+</script>
+  
+</body>
+</html>

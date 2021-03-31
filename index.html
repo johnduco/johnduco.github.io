@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html> 
+<head>
+	<script src="https://d3js.org/d3.v6.min.js"></script>
+	<title>Data Collection</title>
+	<meta charset="UTF-8" name="collection" content="width=device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" href="data_styles.css">
+</head>
+
+<body>
+<script type="text/javascript" src="data_script.js"></script>
+<div class="header">
+	<h1 id="title_text"></h1>
+</div><hr>
+
+<div id="details">
+	<p> Our project is about testing which representation - text or graphical - is better for finding the median from a small set of numbers. <br>
+		For our experiment, you will see a set of number values on your screen. Their representations will either be the number itself - for the text representation, or a bar 
+		graph - for the graphical representation. You will then be asked to find the <b>median value</b> from the numbers presented. 
+		The time you take to click your answer and whether your answer is right will be recorded. Each representation will go through the following: <br>
+			&emsp;&emsp;&emsp;1. 3 numbers displayed on the screen <br>
+			&emsp;&emsp;&emsp;2. 5 numbers displayed on the screen <br>
+			&emsp;&emsp;&emsp;3. 9 numbers displayed on the screen <br>
+			&emsp;&emsp;&emsp;4. 25 numbers displayed on the screen <br>
+		The trials will be done in this order. 
+		You will be doing 5 trials for each of these. In total, there will be 40 trials - 20 for each representation <br>
+		Please check that you satisfy the following requirements before you do the test: <br>
+			&emsp;&emsp;&emsp;1. Use a Desktop or a Laptop to do the trials. <br>
+			&emsp;&emsp;&emsp;2. Use a mouse when doing the trials on a laptop. <br>
+			&emsp;&emsp;&emsp;3. Use Google Chrome for the experiment. <br>
+</p>
+</div>
+<hr>
+<div id="instructions">
+	<h2 id="test">Experiment Details:</h2>
+	<p> 
+		1. You will start with the <b>Text Representation first</b>.<br>
+		2. Then, proceed to do the <b>Bar Graph Representation</b>.<br>
+		3. You will go through all 20 trials of one representation. The results will be displayed at the end of each representation.<br>
+		4. Before you begin the trials, please make a text file as you will need to copy the results for each each representation.
+			Please use the following format - <b>firstName_lastName.txt</b> - when naming the file.<br> 
+		5. When you are done the trials for a representation, please take the time to copy and paste the results provided into your text file.
+			You can copy the results of the two trials into one file. You will also be reminded when you should copy the results.<br>
+		6. Once you are done, send the text file to <b>John Frederick Duco</b> on Slack.<br>
+		7. Click the button below when you are ready.<br>
+	</p>
+</div>
+
+<div id="next_page1">
+	<button type="button" onclick="location.href='data_collection2.html'">Continue</button><br>
+</div>
+
+<script type="text/javascript">
+	d3.select("#title_text").text("Text Representation vs. Graphical Representation")
+		.style('color', 'black')
+		.style('font-size', '40px')
+</script>
+  
+</body>
+</html>
